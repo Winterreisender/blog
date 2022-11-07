@@ -72,7 +72,7 @@ const config = {
             label: '关于',
           },
           {
-            href: 'github.com/Winterreisender',
+            href: 'https://github.com/Winterreisender',
             label: 'GitHub',
             position: 'right',
           },
@@ -116,7 +116,7 @@ const config = {
               },
               {
                 label: 'GitHub',
-                href: 'github.com/Winterreisender',
+                href: 'https://github.com/Winterreisender',
               },
             ],
           },
