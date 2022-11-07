@@ -1,5 +1,5 @@
 testAuthor:
   name: Test Author
   title: Test Author
-  url: https://example.com
-  image_url: https://github.com/slorber.png
+  url: /
+  image_url: /img/logo.png
