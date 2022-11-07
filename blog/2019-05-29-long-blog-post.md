@@ -1,7 +1,7 @@
 ---
 slug: long-blog-post
-title: Long Blog Post
-authors: endi
+title: 测试文章
+authors: testAuthor
 tags: [hello, docusaurus]
 ---
 
