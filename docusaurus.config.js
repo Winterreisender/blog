@@ -13,6 +13,7 @@ const config = {
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
+  staticDirectories: ['public', 'static'],
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
@@ -65,6 +66,7 @@ const config = {
         },
         items: [
           {to: '/blog', label: '博客', position: 'left'},
+          {to: '/lab', label: '实验室', position: 'left'},
           {
             type: 'doc',
             docId: 'about',
@@ -91,7 +93,7 @@ const config = {
             ],
           },
           {
-            title: 'Community',
+            title: '社区(测试)',
             items: [
               {
                 label: 'Stack Overflow',
@@ -100,10 +102,10 @@ const config = {
             ],
           },
           {
-            title: 'More',
+            title: '更多',
             items: [
               {
-                label: 'Blog',
+                label: '博客',
                 to: '/blog',
               },
               {
@@ -113,7 +115,7 @@ const config = {
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()}. Built with Docusaurus.`,
       },
       prism: {
         theme: lightCodeTheme,
