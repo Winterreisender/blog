@@ -44,6 +44,10 @@ main {
   background-color: rgba(36, 37, 38, 1);
 }
 
-article {
-  margin: 1.5em;
+main > article {
+  margin: 2em;
+}
+
+main > nav {
+  margin-bottom: 2em;
 }
