@@ -28,3 +28,22 @@
   --ifm-color-primary-lightest: #4fddbf;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
+
+
+.blog-wrapper {
+  background-image: url("/img/background.jpg");
+  background-size: cover;
+}
+
+main {
+  background-color: rgba(255, 255, 255, 0.9375);
+  border-radius: 5px;
+}
+
+[data-theme='dark'] main {
+  background-color: rgba(36, 37, 38, 1);
+}
+
+article {
+  margin: 1.5em;
+}

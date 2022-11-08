@@ -42,7 +42,13 @@ const config = {
         },
         */
         blog: {
-          showReadingTime: true
+          showReadingTime: true,
+          postsPerPage: 10,
+          blogSidebarCount: 0,
+          feedOptions: {
+            type: 'all',
+            copyright: `Copyright © ${new Date().getFullYear()}`,
+          },
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           //editUrl:
@@ -72,12 +78,7 @@ const config = {
             docId: 'about',
             position: 'left',
             label: '关于',
-          },
-          {
-            href: 'https://github.com/Winterreisender',
-            label: 'GitHub',
-            position: 'right',
-          },
+          }
         ],
       },
       footer: {
@@ -107,11 +108,7 @@ const config = {
               {
                 label: '博客',
                 to: '/blog',
-              },
-              {
-                label: 'GitHub',
-                href: 'https://github.com/Winterreisender',
-              },
+              }
             ],
           },
         ],
