@@ -17,4 +17,4 @@ sidebar_position: 1
 ## 引用
 
 1. 头像: 协奏交响, _[AC娘表情包：提瓦特篇](https://bbs.nga.cn/read.php?tid=30739380)_
-2. 背景: Sava Bobov, (许可: [Unsplash](https://unsplash.com/license))
+2. 背景: Sava Bobov,_[City Under Cloudy Sky](https://unsplash.com/photos/eVa2FK83K6w)_ (许可: [Unsplash](https://unsplash.com/license))
