@@ -16,4 +16,5 @@ sidebar_position: 1
 
 ## 引用
 
-头像: [AC娘表情包：提瓦特篇](https://bbs.nga.cn/read.php?tid=30739380) 作者: 协奏交响
+1. 头像: 协奏交响, _[AC娘表情包：提瓦特篇](https://bbs.nga.cn/read.php?tid=30739380)_
+2. 背景: Sava Bobov, (许可: [Unsplash](https://unsplash.com/license))
