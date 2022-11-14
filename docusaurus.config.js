@@ -94,11 +94,15 @@ const config = {
             ],
           },
           {
-            title: '社区(测试)',
+            title: '博客',
             items: [
               {
-                label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+                label: '标签',
+                href: '/blog/tags',
+              },
+              {
+                label: '总览',
+                href: '/blog/archive',
               }
             ],
           },
