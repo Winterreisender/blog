@@ -10,5 +10,11 @@ export async function onRequest(context) {
       data, // arbitrary space for passing data between middlewares
     } = context;
   
-    return new Response("Hello, world!");
+    
+    try {
+      KVSTORE.put("OK",1);
+    } catch(e) {
+      
+    }
+    return new Response(`Hello, world! ${request.url}`);
   }
