@@ -10,8 +10,8 @@ export async function onRequest(context) {
     data, // arbitrary space for passing data between middlewares
   } = context;
 
-  let counter = parseInt(env.KVStore.get("counter"))
-  env.KVStore.put("counter",counter+1);
+  let counter = parseInt(env.KVStore.get("counter")) || 0;
+  env.KVStore.put("counter",counter + 1);
   return await handleRequest(request,counter);
 }
 
