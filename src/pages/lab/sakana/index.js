@@ -5,17 +5,16 @@ import 'sakana-widget/lib/index.css';
 import SakanaWidget from 'sakana-widget';
 import styles from './styles.module.css';
 
-
 export default function Home() {
   useEffect(()=>{
-    console.log("Sa ka na");
+    console.log("Sakana~~~");
     new SakanaWidget({ character: 'takina', controls: false }).mount('#sakana-widget-takina');
     new SakanaWidget({ character: 'chisato',controls: false }).mount('#sakana-widget-chisato');
   },[])
   
   const {siteConfig} = useDocusaurusContext();
   return (
-    <Layout title={`Hello from ${siteConfig.title}`} description="Sa ka na ~~~" style={{}}>
+    <Layout title={"Sakana~~~"} style={{}}>
       <div className={styles.sakanaContainer}>
         <div id="sakana-widget-takina"></div>
         <div id="sakana-widget-chisato"></div>
