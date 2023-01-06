@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+
+<html lang="zh">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>喜多</title>
+        <style>
+            :root {
+                --kita-say: 0;
+            }
+
+            html, body {
+                height: 95%;
+            }
+
+            #main-container {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                height: 95%;
+            }
+
+            video.kita {
+                width: 500px;
+                object-fit: contain;
+            }
+            video.kita-middlefinger {
+                display: none;
+            }
+            
+            button.kita-roll {
+                background-color: #ee4450;
+                color: white;
+                border: none;
+                cursor: pointer;
+                border-radius: 0.2em;
+                height: 3em;
+                -webkit-user-select: none;
+                user-select: none;
+                padding: 10px 16px;
+                text-align: center;
+                touch-action: manipulation;
+                margin: 10px;
+            }
+            button.kita-roll:hover,
+            button.kita-roll:focus {
+                background-color: #ff4849;
+            }
+            button.kita-rolling {
+                visibility: hidden;
+            }
+        </style>
+        <script type="text/javascript">
+            "use strict";
+            /**
+             * @param kitaType string, options: "middlefinger","love"
+             */
+            function showKita(kitaType) {
+                const kita = document.querySelector(`video.kita-${kitaType}`);
+                kita.style.display = "flex";
+                kita.play();
+                return kita;
+            }
+
+            function resetKita() {
+                document.querySelectorAll("video.kita").forEach( (it)=>{
+                    it.currentTime = 0;
+                    it.style.display="none";
+                });
+            }
+            
+            function randomChoice(arr) {
+                return arr[Math.floor(Math.random() * arr.length)];
+            }
+
+            function onRollButtonClicked() {
+                const kitaButton = document.querySelector("button.kita-roll");
+                kitaButton.classList.add("kita-rolling");
+                resetKita();
+                showKita(randomChoice(['middlefinger','love']));
+            }
+
+            (function initialize() {
+                window.addEventListener("DOMContentLoaded",()=>{
+                    document.querySelectorAll("video.kita").forEach( (it)=>{
+                        it.addEventListener('ended',(e)=>{
+                            const kitaButton = document.querySelector("button.kita-roll");
+                            kitaButton.classList.remove("kita-rolling");
+                        });
+                    });
+                });
+            })();
+        </script>
+        
+    </head>
+    <body>
+        <div id="main-container">
+        <video muted class="kita kita-middlefinger">
+            <source src="media/kita_middlefinger.webm" type="video/webm">
+            <source src="media/kita_middlefinger.mp4" type="video/mp4">
+        </video>
+        <video muted class="kita kita-love">
+            <source src="media/kita_love.webm" type="video/webm">
+            <source src="media/kita_love.mp4" type="video/mp4">
+        </video>
+        <button onclick="onRollButtonClicked()" class="kita-roll" type="button">开始</button> <!-- キターン! -->
+        <p>
+            视频来源: https://www.bilibili.com/video/BV1XD4y1j74V/ <br/>
+            视频作者: 殷秋染 <br/>
+        </p>
+    </div></body>
+</html>
