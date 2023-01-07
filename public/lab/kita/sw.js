@@ -6,11 +6,11 @@ self.addEventListener('install', function(event) {
   event.waitUntil(
     caches.open(cacheName).then(function(cache) {
       return cache.addAll([
-        '/',
-        "/index.html",
-        "/media/kita_love.webm",
-        "/media/kita_middlefinger.webm",
-        "/app/app.webmanifest"
+        './',
+        "./index.html",
+        "./media/kita_love.webm",
+        "./media/kita_middlefinger.webm",
+        "./app/app.webmanifest"
       ]);
     })
   );
